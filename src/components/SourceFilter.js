@@ -10,7 +10,7 @@ export default class SourceFilter extends React.Component {
     render() {
         return (    
             <div className="sourceFilterWrapper">
-                <nav className="sourceFilter" onClick={this.handleClick}>
+                <nav className="sourceFilter">
                     {
                         this.props.sources.map((source) => 
                             <SourceButton 
@@ -18,6 +18,7 @@ export default class SourceFilter extends React.Component {
                                 id={source.id} 
                                 name={source.name}
                                 toggled={this.props.toggled.has(source.id)}
+                                handleInputClick={this.handleClick}
                             />
                         )
                     }

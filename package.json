@@ -29,5 +29,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://kyntsevichvova.github.io/NewsAPI-React/"
+  "homepage": "https://kyntsevichvova.github.io/NewsAPI-React/",
+  "devDependencies": {
+    "react-test-renderer": "^16.8.6"
+  }
 }
