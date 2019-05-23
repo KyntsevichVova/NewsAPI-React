@@ -4,9 +4,9 @@ export default class InputButton extends React.Component {
     render() {
         return (
             <button 
-                className="inputButton"
+                className={this.props.buttonStyle}
                 onClick={this.props.handleInputClick}>
-                Search
+                {this.props.children}
             </button>
         );
     }

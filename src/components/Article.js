@@ -2,10 +2,10 @@ import React from 'react';
 
 export default class Article extends React.Component {
     render() {
-        let article = this.props.article;
+        const article = this.props.article;
         let info = article.source.name;
         if (article.publishedAt) {
-            let date = new Date(article.publishedAt).toLocaleString("en-US", {
+            const date = new Date(article.publishedAt).toLocaleString("en-US", {
                 hour12: false, day: "2-digit", month: "long", year: "numeric", hour: "2-digit", minute: "2-digit"
             });
             info += `, ${date}`; 

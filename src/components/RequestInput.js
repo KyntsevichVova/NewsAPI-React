@@ -13,7 +13,10 @@ export default class RequestInput extends React.Component {
                     />
                     <InputButton 
                         handleInputClick={this.props.handleRequestExecution}
-                    />
+                        buttonStyle="inputButton"
+                    >
+                        Search
+                    </InputButton>
                 </div>
             </div>
         );
